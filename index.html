@@ -26,18 +26,16 @@
         colors: {
           clifford: '#da373d',
         },
+        fontFamily: {
+            manrope: ["Manrope",'serif'],
+        },
       },
     },
   }
 </script>
-<style>
-.manrope{
-  font-family: "Manrope", serif;
-}
-</style>
 </head>
-<body>
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+<body class="font-manrope">
+    <main class="max-w-screen-xl mx-auto px-4 lg:px-28">
         <!-- header part -->
          <header class="pt-10 mb-10 lg:flex">
             <!-- text -->
@@ -190,7 +188,7 @@
                 <!-- review card -->
                  <div class="relative py-24 ">
                         <!-- middle card -->
-                      <div class="absolute z-10 top-44 md:top-62">
+                      <div class="absolute z-10 top-44 md:top-70">
                         <div class="relative h-56 w-full  rounded-lg bg-[rgb(255,255,255)] p-12  items-center px-5">
                           <img class="absolute -top-7 -left-7 bg-white p-1 rounded-full" src="./images/client.png" alt="">
                           <p class="mb-5 font-normal text-[1rem] text-[rgb(119,119,119)]">
@@ -240,7 +238,7 @@
                                <!-- card 1 -->
                 <div class="border-solid border-2 rounded-xl border-[rgb(210,210,210)] p-5">
                   <div class="rounded-lg mb-4">
-                     <img src="./images/news-1.png" alt="">
+                     <img class="w-full" src="./images/news-1.png" alt="">
                   </div>
                   <p class="
                  mb-3 font-medium text-[1rem] text-[rgb(119,119,119)]"> Feb 05,2027
@@ -258,7 +256,7 @@
             <!-- card 2 -->
                <div class="border-solid border-2 rounded-xl border-[rgb(210,210,210)] p-5">
                      <div class="rounded-lg mb-4">
-                        <img src="./images/news-2.png" alt="">
+                        <img class="w-full" src="./images/news-2.png" alt="">
                      </div>
                      <p class="
                     mb-3 font-medium text-[1rem] text-[rgb(119,119,119)]"> Feb 05,2027
@@ -276,7 +274,7 @@
             <!-- card 3 -->
               <div class="border-solid border-2 rounded-xl border-[rgb(210,210, 210)] p-5">
                  <div class="rounded-lg mb-4">
-                    <img src="./images/news-3.png" alt="">
+                    <img class="w-full" src="./images/news-3.png" alt="">
                  </div>
                  <p class="
                 mb-3 font-medium text-[1rem] text-[rgb(119,119,119)]"> Feb 05,2027
@@ -298,11 +296,14 @@
 
     <!-- Fotter Part -->
 
-  <footer class="flex justify-center items-center bg-[linear-gradient(270deg,_rgba(255,_0,_0,_0.1),_rgba(255,_137,_56,_0.1)_100%);]">
+  <footer class="py-12
+   flex justify-center items-center 
+   bg-[linear-gradient(270deg,_rgba(255,_0,_0,_0.1),_rgba(255,_137,_56,_0.1)_100%);]">
 
-    <div class="max-w-screen-xl mx-auto px-8 lg:px-28 py-[200px] ">
+    <div class="w-screen-xl mx-auto  lg:px-0 flex flex-col  border-2 ">
+      <!-- <div class="w-[1280px] mx-auto px-16 lg:px-28 flex flex-col justify-center items-center border-2 "> -->
           <!-- logo -->
-           <div class="mb-8 flex justify-between gap-12">
+           <div class="mb-8 flex justify-between border-2 w-full">
             <img src="./images/cup.png" alt="">
             <div class="flex justify-between items-center gap-2">
               <p class="font-medium text-[20px] text-[#494949]">Ready to get started?</p>
@@ -312,7 +313,7 @@
            </div>
 
            <!-- Links -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                <!-- first column -->
           <div>
             <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
